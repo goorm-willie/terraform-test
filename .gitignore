@@ -1,0 +1,20 @@
+# Terraform
+.terraform
+.terraform.lock.hcl
+.terragrunt-cache
+*.tfstate*
+crash.log
+
+# Infracost
+.infracost
+
+# Secrets are not allowed in general
+*.key
+*.pem
+
+# Secrets are encrypted using git-crypt
+!secrets/*
+
+# OS X
+.history
+.DS_Store
